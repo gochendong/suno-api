@@ -14,9 +14,9 @@ class CustomModeGenerateParam(BaseModel):
 
     prompt: str = Field(..., description="lyrics")
     mv: str = Field(
-        default="chirp-v4",
-        description="model version, default: chirp-v4",
-        examples=["chirp-v4"],
+        default="chirp-v5",
+        description="model version, default: chirp-v5",
+        examples=["chirp-v5"],
     )
     title: str = Field(..., description="song title")
     tags: str = Field(..., description="style of music")
@@ -34,9 +34,9 @@ class DescriptionModeGenerateParam(BaseModel):
     gpt_description_prompt: str
     make_instrumental: bool = False
     mv: str = Field(
-        default="chirp-v4",
-        description="model version, default: chirp-v4",
-        examples=["chirp-v4"],
+        default="chirp-v5",
+        description="model version, default: chirp-v5",
+        examples=["chirp-v5"],
     )
 
     prompt: str = Field(
